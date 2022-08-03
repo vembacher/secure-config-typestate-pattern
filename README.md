@@ -2,7 +2,7 @@
 
 Idea: leverage typestate pattern via a builder to prevent misconfigurations through compile time verification.
 
-Note: this is far from being a fleshed out concept and the issue of having a verifiable secure configuration is a
+Note: this is far from being a fleshed out concept and the issue of having a verifiably secure configuration is a
 challenging topic.
 
 ## Configuration
@@ -10,7 +10,7 @@ challenging topic.
 We use the `build.rs` file to generate a config file. Which allows us to use compile-time verification without having
 to rebuild our application.
 A current limitation is that `secure` can be `false` due to library limitations, however it is still verified during runtime.
-It might be interesting create [typed-builder](https://crates.io/crates/typed-builder) style libraries that allow us
+It might be interesting to create [typed-builder](https://crates.io/crates/typed-builder) style libraries that allow us
 to set constraints on which values can be set and which options can co-exist.
 co-exist.
 
