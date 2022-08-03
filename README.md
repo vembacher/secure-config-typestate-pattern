@@ -7,7 +7,7 @@ challenging topic.
 
 ## Configuration
 
-We use the `build.rs` file to generater a config file. Which allows us to use compile-time verification without having
+We use the `build.rs` file to generate a config file. Which allows us to use compile-time verification without having
 to rebuild our application.
 A current limitation is that `secure` can be `false` due to library limitations, however it is still verified during runtime.
 It might be interesting create [typed-builder](https://crates.io/crates/typed-builder) style libraries that allow us
