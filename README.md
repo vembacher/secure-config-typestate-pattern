@@ -9,8 +9,9 @@ challenging topic.
 
 We use the `build.rs` file to generater a config file. Which allows us to use compile-time verification without having
 to rebuild our application.
-A current limitation is that `secure` can be `false` due to library limitations,
-it might be interesting create [typed-builder](https://crates.io/crates/typed-builder) style libraries that allow us to set constraints on which options can
+A current limitation is that `secure` can be `false` due to library limitations, however it is still verified during runtime.
+It might be interesting create [typed-builder](https://crates.io/crates/typed-builder) style libraries that allow us
+to set constraints on which values can be set and which options can co-exist.
 co-exist.
 
 ```rust
