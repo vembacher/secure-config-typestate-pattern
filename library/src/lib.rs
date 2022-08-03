@@ -10,5 +10,5 @@ pub fn run(config_path: PathBuf) {
         .open(&config_path)
         .expect(format!("No configuration file at specified path {:?}.", config_path).as_str());
     let config = Configuration::from_file(f);
-    println!("Successfully ran! with {:?}", config);
+    println!("Successfully ran with {:?}", config);
 }

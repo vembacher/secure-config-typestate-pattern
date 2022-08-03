@@ -35,5 +35,5 @@ We can run it through this command:
 
 ```shell
 cargo run --package application --bin application -- application/config.json  
-# Output: Successfully ran! with Configuration { secure: true }
+# Output: Successfully ran with Configuration { secure: true }
 ```
